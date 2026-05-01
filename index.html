@@ -27,9 +27,9 @@ canvas.height = 600;
 
 let bird = {
   x: 40,
-  y: 60,
+  y: 80,
   width: 30,
-  height: 30,
+  height: 10,
   gravity: 0.1,
   lift: -3,
   velocity: 0
@@ -74,7 +74,7 @@ function updatePipes() {
     let top = Math.random() * (canvas.height - gap - 100) + 20;
     pipes.push({
       x: canvas.width,
-      width: 50,
+      width: 70,
       top: top,
       bottom: top + gap
     });
