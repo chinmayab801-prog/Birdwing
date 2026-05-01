@@ -26,11 +26,11 @@ canvas.width = 400;
 canvas.height = 600;
 
 let bird = {
-  x: 80,
-  y: 200,
+  x: 40,
+  y: 40,
   width: 30,
   height: 30,
-  gravity: 0.2,
+  gravity: 0.1,
   lift: -5,
   velocity: 0
 };
@@ -70,7 +70,7 @@ function drawPipes() {
 
 function updatePipes() {
   if (frame % 90 === 0) {
-    let gap = 130;
+    let gap = 190;
     let top = Math.random() * (canvas.height - gap - 100) + 20;
     pipes.push({
       x: canvas.width,
